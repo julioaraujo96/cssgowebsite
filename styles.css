@@ -94,6 +94,9 @@ label {
     display: block;
     cursor: pointer;
   }
+  .showcase-mid {
+    margin-top: 70vh;
+  }
   .menu {
     text-align: center;
     width: 100%;
