@@ -14,53 +14,87 @@
     <title>CS:GO INFO</title>
   </head>
   <body>
-    <header class="showcase">
-      <nav>
-        <div class="social">
+    <div class="container">
+      <header class="showcase">
+        <nav>
+          <div class="social">
+            <a
+              href="https://github.com/julioaraujo96/cssgowebsite"
+              target="_blank"
+              ><i class="fab fa-github-square"></i
+            ></a>
+            <a href="https://www.facebook.com/CounterStrike/" target="_blank"
+              ><i class="fab fa-facebook-square"></i
+            ></a>
+            <a href="https://www.instagram.com/csgo_dev/?hl=pt" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://twitter.com/csgo" target="_blank"
+              ><i class="fab fa-twitter-square"></i
+            ></a>
+          </div>
+          <label for="toggle">&#9776;</label>
+          <input type="checkbox" id="toggle" />
+          <div class="menu">
+            <a href="#">Home</a>
+            <a href="#info">CSGO</a>
+            <a href="rankings.html">Rankings</a>
+            <a href="#">Modos de Jogo</a>
+            <a href="#">Stats</a>
+          </div>
+        </nav>
+        <div class="showcase-mid">
           <a
-            href="https://github.com/julioaraujo96/cssgowebsite"
+            href="https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/"
             target="_blank"
-            ><i class="fab fa-github-square"></i
-          ></a>
-          <a href="https://www.facebook.com/CounterStrike/" target="_blank"
-            ><i class="fab fa-facebook-square"></i
-          ></a>
-          <a href="https://www.instagram.com/csgo_dev/?hl=pt" target="_blank"
-            ><i class="fab fa-instagram"></i
-          ></a>
-          <a href="https://twitter.com/csgo" target="_blank"
-            ><i class="fab fa-twitter-square"></i
-          ></a>
+            class="buy"
+            >Download</a
+          >
+          <a
+            href="https://www.twitch.tv/directory/game/Counter-Strike%3A%20Global%20Offensive"
+            target="_blank"
+            class="twitch"
+            >Ver na Twitch</a
+          >
         </div>
-        <label for="toggle">&#9776;</label>
-        <input type="checkbox" id="toggle" />
-        <div class="menu">
-          <a href="#">Home</a>
-          <a href="#">CSGO</a>
-          <a href="rankings.html">Rankings</a>
-          <a href="#">Modos de Jogo</a>
-          <a href="#">Stats</a>
+        <div class="showcase-bot">
+          <div class="middle">
+            <div class="mouse"></div>
+          </div>
         </div>
-      </nav>
-      <div class="showcase-mid">
-        <a
-          href="https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/"
-          target="_blank"
-          class="buy"
-          >Download</a
-        >
-        <a
-          href="https://www.twitch.tv/directory/game/Counter-Strike%3A%20Global%20Offensive"
-          target="_blank"
-          class="twitch"
-          >Ver na Twitch</a
-        >
-      </div>
-    </header>
-    <div class="showcase-bot">
-      <div class="middle">
-        <div class="mouse"></div>
-      </div>
+      </header>
+
+      <main id="info">
+        <section>
+          <p>
+            Counter-Strike: Global Offensive (CS: GO) é um jogo de tiro em
+            primeira pessoa que é possível jogar em multiplayer desenvolvido
+            pela Valve e Hidden Path Entertainment, sendo uma sequência de
+            Counter-Strike: Source e por exteriormente de Counter-Strike 1.6.
+          </p>
+          <p>
+            O CS:GO foi lançado para o Windows , OS X , Xbox 360 e PlayStation 3
+            em agosto de 2012, enquanto a versão Linux apenas foi lançada em
+            2014. O jogo coloca duas equipes uma contra a outra em mapas
+            diferenciados: os Terroristas e os Contra-Terroristas. Ambos os
+            lados têm a tarefa de eliminar o outro enquanto também cumprem
+            objetivos separados. Aos Terroristas é lhes atribuído a tarefa de
+            colocar a bomba em locais específicos no mapa, enquanto os
+            Contra-Terroristas devem impedir que a bomba seja plantada, se não o
+            conseguirem, irão ter 40 segundos para tentar desarma-la.
+          </p>
+        </section>
+        <aside>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/edYCtaNueQY"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </aside>
+      </main>
     </div>
   </body>
 </html>
