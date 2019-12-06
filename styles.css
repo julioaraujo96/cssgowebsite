@@ -167,22 +167,14 @@ label {
   display: grid;
   grid-template-columns: 50% 30%;
 }
-#info h2 {
-  text-align: center;
-  padding-top: 4%;
-  text-shadow: 4px 4px 5px Black;
-  color: white;
-  font-size: 26px;
-  margin-bottom: 2%;
-}
+
 section {
-  margin-top: 10%;
-  margin-left: 5%;
-  margin-bottom: 30%;
+  padding-top: 10%;
+  padding-left: 5%;
 }
 aside {
-  margin-top: 30%;
-  margin-left: 10%;
+  padding-top: 25%;
+  padding-left: 10%;
 }
 /*-----------------------------Mobile------------------------------------------*/
 
@@ -214,5 +206,17 @@ aside {
   }
   .showcase-bot {
     display: none;
+  }
+  /*---------------------------------Info section--------------------------------------*/
+  #info {
+    display: block;
+  }
+  section {
+    font-size: 10px;
+    padding-right: 1em;
+  }
+  iframe {
+    width: 90%;
+    height: 25%;
   }
 }
