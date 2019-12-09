@@ -261,4 +261,14 @@ aside {
   .box {
     padding-top: 20%;
   }
+
+  .box input[type='text'],
+  .box textarea {
+    width: 40%;
+  }
+
+  .box input[type='text']:focus,
+  .box textarea:focus {
+    width: 50%;
+  }
 }
