@@ -2,11 +2,12 @@
 
 :root {
   --main-bg-color: #2d3436;
+  --mobile-menu: #2c3e50;
   --mouse-scroll: #fff;
   --twitch: purple;
   --menu-hover: orange;
   --info-section: #d35400;
-  --contact-section: #fff;
+  --contact-section: #c0392b;
 }
 /*--------------------------------------------------------*/
 
@@ -90,6 +91,10 @@ label {
 /*-----------------------------Mobile------------------------------------------*/
 
 @media only screen and (max-width: 500px) {
+  .social {
+    position: fixed;
+    z-index: 99;
+  }
   .social i {
     margin-left: 20px;
     margin-top: 20px;
@@ -98,6 +103,9 @@ label {
   label {
     display: block;
     cursor: pointer;
+    position: fixed;
+    z-index: 99;
+    right: 0;
   }
   .menu {
     text-align: center;
@@ -111,5 +119,9 @@ label {
   }
   #toggle:checked + .menu {
     display: block;
+    background-color: var(--mobile-menu);
+    padding-top: 50px;
+    position: fixed;
+    z-index: 98;
   }
 }
