@@ -54,6 +54,7 @@ body {
   background-color: var(--main-bg-color);
   scroll-snap-align: center;
 }
+
 /*--------------------------Navigation------------------------------*/
 nav {
   text-align: right;
@@ -237,6 +238,31 @@ aside {
 .box input[type='submit']:hover {
   opacity: 0.5;
 }
+/*--------------------------Back to Top------------------------------*/
+#back-to-top-btn {
+  float: right;
+  margin-right: 1%;
+  font-size: 26px;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  outline: none;
+  border: 3px solid #333;
+  border-radius: 50%;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-property: background-color, color;
+}
+#back-to-top-btn i {
+  padding-left: 30%;
+}
+#back-to-top-btn:hover,
+#back-to-top-btn:focus {
+  background-color: #333;
+  color: #fff;
+}
 /*-----------------------------Mobile------------------------------------------*/
 
 @media only screen and (max-width: 500px) {
@@ -279,5 +305,9 @@ aside {
   iframe {
     width: 90%;
     height: 25%;
+  }
+  /*---------------------------------Back to Top Button--------------------------------------*/
+  #back-to-top-btn {
+    margin-right: 5%;
   }
 }
