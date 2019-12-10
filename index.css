@@ -132,7 +132,7 @@ label {
   /* Scroll Snap */
   scroll-snap-align: center;
   display: grid;
-  grid-template-columns: 50% 30%;
+  grid-template-columns: 50% 50%;
 }
 
 #info section {
@@ -142,6 +142,7 @@ label {
 aside {
   padding-top: 25%;
   padding-left: 10%;
+  padding-right: 10%;
 }
 /*-----------------------------Contact------------------------------------------*/
 .wrapper {
@@ -213,6 +214,23 @@ aside {
 }
 
 /*-----------------------------Mobile------------------------------------------*/
+@media only screen and (max-width: 800px) {
+  #info {
+    display: block;
+  }
+  #info section {
+    font-size: 12px;
+    padding-right: 1em;
+    padding-top: 15%;
+  }
+  #info aside {
+    padding-top: 5%;
+  }
+  iframe {
+    width: 90%;
+    height: 47vh;
+  }
+}
 
 @media only screen and (max-width: 500px) {
   .social i {
