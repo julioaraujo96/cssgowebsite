@@ -108,7 +108,16 @@ label {
 .active {
   background-color: orangered;
 }
-
+#personal-stats {
+  width: 100%;
+  background-color: #1e3799;
+  height: 100%;
+}
+#team-stats {
+  display: none;
+  background-color: orangered;
+  height: 100%;
+}
 /*-----------------------------Mobile------------------------------------------*/
 
 @media only screen and (max-width: 500px) {
