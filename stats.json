@@ -1,0 +1,78 @@
+{
+  "playerstats": {
+    "stats": [
+      {
+        "name": "total_kills",
+        "value": 110527
+      },
+      {
+        "name": "total_deaths",
+        "value": 95930
+      },
+      {
+        "name": "total_time_played",
+        "value": 5784386
+      },
+      {
+        "name": "total_planted_bombs",
+        "value": 2726
+      },
+      {
+        "name": "total_defused_bombs",
+        "value": 594
+      },
+      {
+        "name": "headshot_percentage",
+        "value": 70
+      },
+      {
+        "name": "total_wins",
+        "value": 26937
+      },
+      {
+        "name": "total_defeats",
+        "value": 13900
+      }
+    ]
+  },
+  "teams": {
+    "stats": [
+      {
+        "name": "total_kills",
+        "country": 110527
+      },
+      {
+        "name": "total_deaths",
+        "country": 95930
+      },
+      {
+        "name": "total_time_played",
+        "country": 5784386
+      },
+      {
+        "name": "total_planted_bombs",
+        "country": 2726
+      },
+      {
+        "name": "total_defused_bombs",
+        "country": 594
+      },
+      {
+        "name": "total_wins",
+        "country": 26937
+      },
+      {
+        "name": "total_wins",
+        "country": 26937
+      },
+      {
+        "name": "total_wins",
+        "country": 26937
+      },
+      {
+        "name": "total_wins",
+        "country": 26937
+      }
+    ]
+  }
+}
