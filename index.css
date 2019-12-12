@@ -262,9 +262,7 @@ aside {
     position: fixed;
     z-index: 98;
   }
-  /* .showcase-bot {
-    display: none;
-  } */
+
   /*---------------------------------Info section--------------------------------------*/
   #info {
     display: block;
