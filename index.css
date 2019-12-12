@@ -131,19 +131,21 @@ label {
   color: #fff;
   /* Scroll Snap */
   scroll-snap-align: center;
-  display: grid;
-  grid-template-columns: 50% 50%;
+  display: flex;
+  justify-content: space-between;
 }
 
 #info section {
-  padding-top: 10%;
+  padding-top: 5%;
   padding-left: 5%;
 }
 aside {
-  padding-top: 25%;
-  padding-left: 10%;
-  padding-right: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 10%;
+  margin-top: 20%;
 }
+
 /*-----------------------------Contact------------------------------------------*/
 .wrapper {
   background-color: var(--contact-section);
@@ -214,9 +216,9 @@ aside {
 }
 
 /*-----------------------------Mobile------------------------------------------*/
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 960px) {
   #info {
-    display: block;
+    flex-direction: column;
   }
   #info section {
     font-size: 12px;
@@ -224,11 +226,12 @@ aside {
     padding-top: 15%;
   }
   #info aside {
-    padding-top: 5%;
+    margin-top: 0;
+    align-self: center;
   }
   iframe {
-    width: 90%;
-    height: 47vh;
+    width: 400px;
+    height: 200px;
   }
 }
 
@@ -264,20 +267,13 @@ aside {
   }
 
   /*---------------------------------Info section--------------------------------------*/
-  #info {
-    display: block;
-  }
-  #info section {
-    font-size: 12px;
-    padding-right: 1em;
-    padding-top: 15%;
-  }
+
   #info aside {
-    padding-top: 5%;
+    align-self: center;
   }
   iframe {
-    width: 90%;
-    height: 20vh;
+    width: 200px;
+    height: 100px;
   }
   /*---------------------------------Contact--------------------------------------*/
   .box {
