@@ -26,6 +26,7 @@ body {
   font-family: Montserrat, Verdana, sans-serif;
   line-height: 1.6;
   overflow: hidden;
+  font-size: 62.5%;
 }
 
 /*--------------------------------------------------------*/
@@ -43,7 +44,7 @@ body {
   margin-left: 20px;
   margin-top: 10px;
   float: left;
-  font-size: 40px;
+  font-size: 3.5em;
   color: #8395a7;
 }
 .social i:hover {
@@ -64,6 +65,7 @@ nav {
 .menu {
   margin: 0 30px 0 0;
   text-transform: uppercase;
+  font-size: 1.5em;
 }
 .menu a {
   clear: right;
@@ -109,14 +111,36 @@ label {
   background-color: orangered;
 }
 #personal-stats {
+  display: flex;
+  justify-content: space-around;
   width: 100%;
   background-color: #1e3799;
-  height: 100%;
+  padding-top: 5%;
+  font-size: 1.5em;
+}
+ul {
+  list-style: none;
+  color: white;
+  line-height: 1.8;
+}
+.player-pic img {
+  width: 10em;
+  border-radius: 50%;
+  padding-bottom: 20%;
+}
+.vitality {
+  height: 10em;
+}
+h1 {
+  color: white;
+}
+span {
+  color: orangered;
+  font-size: 800;
 }
 #team-stats {
   display: none;
   background-color: orangered;
-  height: 100%;
 }
 /*-----------------------------Mobile------------------------------------------*/
 
@@ -128,7 +152,6 @@ label {
   .social i {
     margin-left: 20px;
     margin-top: 20px;
-    font-size: 30px;
   }
   label {
     display: block;
@@ -153,5 +176,27 @@ label {
     padding-top: 50px;
     position: fixed;
     z-index: 98;
+  }
+
+  #personal-stats {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    background-color: #1e3799;
+    padding-top: 5%;
+    font-size: 1.5em;
+  }
+  .player-pic img {
+    width: 6em;
+    border-radius: 50%;
+    padding-bottom: 20%;
+  }
+  .vitality {
+    height: 6em;
+    width: 16em;
+    align-self: center;
+    margin: 1em 0;
   }
 }
