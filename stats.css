@@ -137,7 +137,16 @@ span {
 }
 #team-stats {
   display: none;
-  background-color: orangered;
+  justify-content: space-around;
+  padding: 5% 0;
+  background-color: #1e3799;
+  font-size: 1em;
+}
+.teamstatslist li span {
+  color: #1e3799;
+}
+#logo {
+  height: 10em;
 }
 /*-----------------------------Mobile------------------------------------------*/
 

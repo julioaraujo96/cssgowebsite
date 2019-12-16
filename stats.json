@@ -27,7 +27,7 @@
       },
       {
         "name": "total_wins",
-        "value": 26937
+        "value": 90000
       },
       {
         "name": "total_defeats",
@@ -36,43 +36,14 @@
     ]
   },
   "teams": {
-    "stats": [
-      {
-        "name": "total_kills",
-        "country": 110527
-      },
-      {
-        "name": "total_deaths",
-        "country": 95930
-      },
-      {
-        "name": "total_time_played",
-        "country": 5784386
-      },
-      {
-        "name": "total_planted_bombs",
-        "country": 2726
-      },
-      {
-        "name": "total_defused_bombs",
-        "country": 594
-      },
-      {
-        "name": "total_wins",
-        "country": 26937
-      },
-      {
-        "name": "total_wins",
-        "country": 26937
-      },
-      {
-        "name": "total_wins",
-        "country": 26937
-      },
-      {
-        "name": "total_wins",
-        "country": 26937
-      }
-    ]
+    "stats": {
+      "name": "Grayhounds",
+      "logo": "https://static.hltv.org/images/team/logo/8008",
+      "maps_played": 553,
+      "wins": 401,
+      "losses": 152,
+      "total_kills": 51252,
+      "total_deaths": 44023
+    }
   }
 }
