@@ -39,7 +39,6 @@ body {
     height: 100vh;
     overflow-y: scroll;
     scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
 }
 
 
@@ -64,7 +63,6 @@ body {
     width: 100%;
     height: 100vh;
     background-color: var(--main-bg-color);
-    scroll-snap-align: center;
 }
 
 
@@ -151,8 +149,6 @@ label {
     height: 100vh;
     background-color: var(--info-section);
     color: #fff;
-    /* Scroll Snap */
-    scroll-snap-align: center;
     display: flex;
     justify-content: space-between;
 }
@@ -181,8 +177,6 @@ aside {
     width: 100%;
     height: 100vh;
     color: #fff;
-    /* Scroll Snap */
-    scroll-snap-align: center;
 }
 
 .box {
