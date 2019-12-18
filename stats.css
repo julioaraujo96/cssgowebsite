@@ -213,4 +213,12 @@ span {
     align-self: center;
     margin: 1em 0;
   }
+  #team-stats {
+    flex-direction: column;
+    text-align: center;
+  }
+  #team-stats div,
+  #team-stats img {
+    margin-top: 3em;
+  }
 }
