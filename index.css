@@ -5,8 +5,8 @@
   --mouse-scroll: #fff;
   --twitch: purple;
   --menu-hover: orange;
-  --info-section: #d35400;
-  --contact-section: #c0392b;
+  --info-section: #1e3799;
+  --contact-section: black;
 }
 
 /*--------------------------------------------------------*/
@@ -149,6 +149,12 @@ label {
   padding-top: 5%;
   padding-left: 5%;
 }
+.description span {
+  color: limegreen;
+}
+.description p:nth-of-type(2) {
+  margin: 2rem 0;
+}
 
 aside {
   margin-left: 5%;
@@ -178,6 +184,7 @@ iframe {
 }
 
 .box h2 {
+  padding-top: 3em;
   color: #fff;
   text-transform: uppercase;
   font-weight: 500;

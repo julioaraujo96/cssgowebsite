@@ -6,9 +6,10 @@
   --mouse-scroll: #fff;
   --twitch: purple;
   --menu-hover: orange;
-  --info-section: #d35400;
-  --contact-section: #c0392b;
+  --info-section: #1e3799;
+  --contact-section: black;
 }
+
 /*--------------------------------------------------------*/
 
 * {
@@ -96,7 +97,7 @@ label {
 .team,
 .personal {
   padding: 1em 0;
-  background-color: #1e3799;
+  background-color: var(--info-section);
   border: 1px solid black;
   color: white;
 }
