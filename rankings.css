@@ -27,7 +27,6 @@
 body {
   font-family: Montserrat, Verdana, sans-serif;
   line-height: 1.6;
-  overflow: hidden;
 }
 
 /*--------------------------------------------------------*/
@@ -35,10 +34,6 @@ body {
 .container {
   width: 100%;
   height: 100vh;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-  -ms-scroll-snap-type: y mandatory;
-  scroll-snap-type: y mandatory;
   background-color: var(--main-bg-color);
 }
 /*----------------------Social Links----------------------------------*/
@@ -56,7 +51,6 @@ body {
 header {
   width: 100%;
   background-color: var(--main-bg-color);
-  scroll-snap-align: center;
 }
 
 .wrapper {
@@ -109,9 +103,15 @@ label {
 /*-----------------------------Mobile------------------------------------------*/
 
 @media only screen and (max-width: 500px) {
-  .social {
+  nav {
+    display: block;
+    height: auto;
     position: fixed;
-    z-index: 99;
+    height: auto;
+    z-index: 50;
+    width: 100%;
+    top: 0;
+    background-color: var(--main-bg-color);
   }
   .social i {
     margin-left: 20px;
@@ -121,9 +121,6 @@ label {
   label {
     display: block;
     cursor: pointer;
-    position: fixed;
-    z-index: 99;
-    right: 0;
   }
   .menu {
     text-align: center;
@@ -137,9 +134,7 @@ label {
   }
   #toggle:checked + .menu {
     display: block;
-    background-color: var(--mobile-menu);
+    background-color: var(--main-bg-color);
     padding-top: 50px;
-    position: fixed;
-    z-index: 98;
   }
 }
