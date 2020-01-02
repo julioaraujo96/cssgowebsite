@@ -107,24 +107,21 @@ label {
 }
 .select-stats {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 25% 25%;
+  justify-content: space-around;
+  margin: 0 10%;
   padding-top: 2.5%;
 }
 .team,
 .personal {
-  padding: 2.5em 0;
-  border: none;
-  color: white;
+  border: 1px solid;
+  border-radius: 5%;
+  box-shadow: 5px 10px rgba(0, 0, 0, 0.2);
 }
+
 .team:hover,
 .personal:hover {
   opacity: 0.5;
-}
-.personal {
-  background: url('./img/Portugal.jpg');
-}
-.team {
-  background: url('./img/Mundial.png');
 }
 
 /*-----------------------------Mobile------------------------------------------*/
