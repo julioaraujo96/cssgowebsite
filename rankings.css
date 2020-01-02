@@ -221,4 +221,12 @@ label {
     .select-stats {
         padding-top: 25%;
     }
+    .top h2 {
+        padding-top: 5em;
+        text-transform: uppercase;
+        text-shadow: 4px 4px 5px Black;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+    }
 }
