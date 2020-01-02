@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 :root {
   --main-bg-color: #2d3436;
-  --mobile-menu: #2c3e50;
   --mouse-scroll: #fff;
   --twitch: purple;
   --menu-hover: orange;
@@ -102,8 +101,8 @@ label {
 /*----------------------Download/Twitch----------------------------------*/
 
 .showcase-mid {
-  margin-top: 30vh;
   display: block;
+  padding-top: 200px;
   text-align: center;
 }
 
@@ -317,9 +316,15 @@ iframe {
 }
 
 @media only screen and (max-width: 500px) {
-  .social {
+  nav {
+    display: block;
+    height: auto;
     position: fixed;
-    z-index: 99;
+    height: auto;
+    z-index: 50;
+    width: 100%;
+    top: 0;
+    background-color: var(--main-bg-color);
   }
   .social i {
     margin-left: 20px;
@@ -329,9 +334,6 @@ iframe {
   label {
     display: block;
     cursor: pointer;
-    position: fixed;
-    z-index: 99;
-    right: 0;
   }
   .menu {
     text-align: center;
@@ -345,10 +347,12 @@ iframe {
   }
   #toggle:checked + .menu {
     display: block;
-    background-color: var(--mobile-menu);
+    background-color: var(--main-bg-color);
     padding-top: 50px;
-    position: fixed;
-    z-index: 98;
+  }
+
+  .showcase-mid {
+    padding-top: 400px;
   }
   /*---------------------------------Info section--------------------------------------*/
   #info aside {
