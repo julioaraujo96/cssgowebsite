@@ -14,11 +14,13 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 *:before,
 *:after {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -113,10 +115,12 @@ label {
   border: 0.1em solid #fff;
   margin: 0 0.3em 0.3em 0;
   border-radius: 0.12em;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-weight: 300;
   color: #ffffff;
   text-align: center;
+  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
@@ -138,7 +142,11 @@ label {
   width: 100%;
   background-color: var(--info-section);
   color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -168,6 +176,7 @@ iframe {
   animation-name: slideUp;
   -webkit-animation-name: slideUp;
   animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-duration: 1s;
   visibility: visible;
@@ -176,10 +185,12 @@ iframe {
 @keyframes slideUp {
   0% {
     opacity: 0;
+    -webkit-transform: translateY(70%);
     transform: translateY(70%);
   }
   100% {
     opacity: 1;
+    -webkit-transform: translateY(0%);
     transform: translateY(0%);
   }
 }
@@ -230,6 +241,7 @@ iframe {
   outline: none;
   color: #fff;
   border-radius: 24px;
+  -webkit-transition: 0.25s;
   transition: 0.25s;
 }
 
@@ -237,6 +249,21 @@ iframe {
 .box textarea:focus {
   width: 80%;
   border-color: #2ecc71;
+}
+
+.box input[type='text']::-webkit-input-placeholder,
+.box textarea::-webkit-input-placeholder {
+  color: white;
+}
+
+.box input[type='text']:-ms-input-placeholder,
+.box textarea:-ms-input-placeholder {
+  color: white;
+}
+
+.box input[type='text']::-ms-input-placeholder,
+.box textarea::-ms-input-placeholder {
+  color: white;
 }
 
 .box input[type='text']::placeholder,
@@ -255,6 +282,7 @@ iframe {
   outline: none;
   color: white;
   border-radius: 24px;
+  -webkit-transition: 0.25s;
   transition: 0.25s;
   cursor: pointer;
 }
@@ -267,6 +295,9 @@ iframe {
 
 @media only screen and (max-width: 960px) {
   #info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
   #info .description {
@@ -276,6 +307,7 @@ iframe {
   }
   #info aside {
     margin-top: 0;
+    -ms-flex-item-align: center;
     align-self: center;
   }
   iframe {
@@ -320,6 +352,7 @@ iframe {
   }
   /*---------------------------------Info section--------------------------------------*/
   #info aside {
+    -ms-flex-item-align: center;
     align-self: center;
   }
   iframe {
