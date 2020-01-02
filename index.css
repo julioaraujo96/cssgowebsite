@@ -26,7 +26,6 @@ html,
 body {
   font-family: Montserrat, Verdana, sans-serif;
   line-height: 1.6;
-  overflow: hidden;
   min-height: 100%;
 }
 
@@ -35,8 +34,6 @@ body {
 .container {
   width: 100%;
   height: 100vh;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
 }
 
 /*----------------------Social Links----------------------------------*/
@@ -165,7 +162,35 @@ aside {
 iframe {
   border: 0;
 }
+.slideIn {
+  animation-name: slideUp;
+  -webkit-animation-name: slideUp;
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  visibility: visible;
+}
 
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes slideUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
 /*-----------------------------Contact------------------------------------------*/
 
 .wrapper {
