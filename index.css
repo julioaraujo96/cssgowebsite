@@ -145,6 +145,7 @@ label {
 #info .description {
   padding-top: 5%;
   padding-left: 5%;
+  -webkit-transform: translateY(70%);
 }
 .description span {
   color: limegreen;
@@ -165,8 +166,9 @@ iframe {
 .slideIn {
   animation-name: slideUp;
   -webkit-animation-name: slideUp;
-  animation-duration: 2s;
-  -webkit-animation-duration: 2s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
   visibility: visible;
 }
 
