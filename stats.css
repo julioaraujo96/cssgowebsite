@@ -15,11 +15,13 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 *:before,
 *:after {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -36,6 +38,7 @@ body {
   height: 100vh;
   overflow-y: scroll;
   scroll-behavior: smooth;
+  -ms-scroll-snap-type: y mandatory;
   scroll-snap-type: y mandatory;
   background-color: var(--main-bg-color);
 }
@@ -110,7 +113,10 @@ label {
   background-color: orangered;
 }
 #personal-stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   width: 100%;
   background-color: #1e3799;
@@ -138,6 +144,7 @@ span {
 }
 #team-stats {
   display: none;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   padding: 5% 0;
   background-color: #1e3799;
@@ -158,6 +165,7 @@ span {
   .container {
     overflow-y: visible;
     scroll-behavior: smooth;
+    -ms-scroll-snap-type: none;
     scroll-snap-type: none;
   }
 
@@ -195,8 +203,14 @@ span {
   }
 
   #personal-stats {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     text-align: center;
     width: 100%;
@@ -211,10 +225,14 @@ span {
   .vitality {
     height: 6em;
     width: 10em;
+    -ms-flex-item-align: center;
     align-self: center;
     margin: 1em 0;
   }
   #team-stats {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     text-align: center;
   }
