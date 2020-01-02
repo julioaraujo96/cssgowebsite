@@ -146,6 +146,7 @@ label {
   padding-top: 5%;
   padding-left: 5%;
   -webkit-transform: translateY(70%);
+  transform: translateY(70%);
 }
 .description span {
   color: limegreen;
@@ -175,11 +176,11 @@ iframe {
 @keyframes slideUp {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(70%);
+    transform: translateY(70%);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
   }
 }
 
