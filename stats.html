@@ -1,88 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script
-      src="https://kit.fontawesome.com/00d35664a3.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/00d35664a3.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" href="/favicon-16x16.ico" sizes="16x16" />
     <link rel="icon" type="image/png" href="/favicon-32x32.ico" sizes="32x32" />
     <link rel="stylesheet" href="stats.css" />
     <title>CS:GO INFO</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <div class="container">
-      <header>
-        <nav>
-          <div class="social">
-            <a
-              href="https://github.com/julioaraujo96/cssgowebsite"
-              target="_blank"
-              ><i class="fab fa-github-square"></i
-            ></a>
-            <a href="https://www.facebook.com/CounterStrike/" target="_blank"
-              ><i class="fab fa-facebook-square"></i
-            ></a>
-            <a href="https://www.instagram.com/csgo_dev/?hl=pt" target="_blank"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a href="https://twitter.com/csgo" target="_blank"
-              ><i class="fab fa-twitter-square"></i
-            ></a>
-            <a href="index.html#contact"
-              ><i class="fas fa-envelope-square"></i
-            ></a>
-          </div>
-          <label for="toggle">&#9776;</label>
-          <input type="checkbox" id="toggle" />
-          <div class="menu">
-            <a href="index.html">Home</a>
-            <a href="rankings.html">Rankings</a>
-            <a href="gamemodes.html">Modos de Jogo</a>
-            <a href="#">Stats</a>
-          </div>
-        </nav>
-      </header>
-      <div class="select-stats">
-        <button class="personal active" id="personalBtn">Stats Pessoais</button>
-        <button class="team" id="teamBtn">Equipas E-Sports</button>
-      </div>
-      <div id="personal-stats">
-        <h1>zywoo</h1>
-        <img class="vitality" src="img/vitality.png" alt="vitality" />
-        <div>
-          <ul>
-            <li>Total de kills: <span id="kills"></span></li>
-            <li>Total de mortes: <span id="deaths"></span></li>
-            <li>Tempo jogado: <span id="playtime"></span></li>
-            <li>Bombas plantadas: <span id="bombsplanted"></span></li>
-            <li>Bombas defusadas: <span id="bombsdefused"></span></li>
-            <li>Percentagem de headshot: <span id="hs"></span></li>
-            <li>Vitórias: <span id="victory"></span></li>
-          </ul>
+        <header>
+            <nav>
+                <div class="social">
+                    <a href="https://github.com/julioaraujo96/cssgowebsite" target="_blank"><i class="fab fa-github-square"></i></a>
+                    <a href="https://www.facebook.com/CounterStrike/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.instagram.com/csgo_dev/?hl=pt" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/csgo" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                    <a href="index.html#contact"><i class="fas fa-envelope-square"></i></a>
+                </div>
+                <label for="toggle">&#9776;</label>
+                <input type="checkbox" id="toggle" />
+                <div class="menu">
+                    <a href="index.html">Home</a>
+                    <a href="rankings.html">Rankings</a>
+                    <a href="skins.html">Skins</a>
+                    <a href="#">Stats</a>
+                </div>
+            </nav>
+        </header>
+        <div class="select-stats">
+            <button class="personal active" id="personalBtn">Stats Pessoais</button>
+            <button class="team" id="teamBtn">Equipas E-Sports</button>
         </div>
-        <figure class="player-pic">
-          <img src="img/zywoo.jpeg" alt="zywoo " />
-        </figure>
-      </div>
-      <div id="team-stats">
-        <h1 id="teamname"></h1>
-        <img id="logo" src="#" alt="Grayhounds" />
-        <div>
-          <ul>
-            <li>Mapas jogados: <span id="maps"></span></li>
-            <li>Wins: <span id="teamwins"></span></li>
-            <li>Losses: <span id="teamlosses"></span></li>
-            <li>Total de kills: <span id="teamkills"></span></li>
-            <li>Total de mortes: <span id="teamdeaths"></span></li>
-          </ul>
+        <div id="personal-stats">
+            <h1>zywoo</h1>
+            <img class="vitality" src="img/vitality.png" alt="vitality" />
+            <div>
+                <ul>
+                    <li>Total de kills: <span id="kills"></span></li>
+                    <li>Total de mortes: <span id="deaths"></span></li>
+                    <li>Tempo jogado: <span id="playtime"></span></li>
+                    <li>Bombas plantadas: <span id="bombsplanted"></span></li>
+                    <li>Bombas defusadas: <span id="bombsdefused"></span></li>
+                    <li>Percentagem de headshot: <span id="hs"></span></li>
+                    <li>Vitórias: <span id="victory"></span></li>
+                </ul>
+            </div>
+            <figure class="player-pic">
+                <img src="img/zywoo.jpeg" alt="zywoo " />
+            </figure>
         </div>
-      </div>
+        <div id="team-stats">
+            <h1 id="teamname"></h1>
+            <img id="logo" src="#" alt="Grayhounds" />
+            <div>
+                <ul>
+                    <li>Mapas jogados: <span id="maps"></span></li>
+                    <li>Wins: <span id="teamwins"></span></li>
+                    <li>Losses: <span id="teamlosses"></span></li>
+                    <li>Total de kills: <span id="teamkills"></span></li>
+                    <li>Total de mortes: <span id="teamdeaths"></span></li>
+                </ul>
+            </div>
+        </div>
     </div>
     <script src="stats.js"></script>
-  </body>
+</body>
+
 </html>
