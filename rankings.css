@@ -206,12 +206,12 @@ label {
   }
   .flags {
     display: flex;
-    width: 60%;
     margin: 0 auto;
   }
   .mundial,
   .portugal {
     box-shadow: none;
+    width: 60%;
   }
 
   .top {
