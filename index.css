@@ -436,4 +436,19 @@ iframe {
   .box textarea:focus {
     width: 50%;
   }
+  /*---------------------------------Footer--------------------------------------*/
+  footer {
+    letter-spacing: 0.5em;
+    font-size: 8px;
+  }
+
+  /* footer p {
+  padding: 1em 0 1em 2em;
+} */
+
+  /* .fa-arrow-right {
+  animation: side 1s infinite linear;
+  padding: 1em 0;
+} */
 }
+/*-----------------------------------------------------------------------------------*/
