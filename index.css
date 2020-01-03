@@ -158,6 +158,33 @@ span {
   }
 }
 
+/*---------------------------------Footer--------------------------------------*/
+footer {
+  display: flex;
+  letter-spacing: 0.5em;
+  background-color: var(--main-bg-color);
+  color: #607175;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  padding: 1em 0 1em 2em;
+}
+
+.fa-arrow-right {
+  animation: side 1s infinite linear;
+  padding: 1em 0;
+}
+@keyframes side {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(10px);
+  }
+}
+/*-----------------------------------------------------------------------------------*/
 /*---------------------------------Info section--------------------------------------*/
 
 #info {
