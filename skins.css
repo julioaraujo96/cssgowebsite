@@ -149,9 +149,11 @@ img {
     text-align: center;
 }
 
-.content-table tbody tr:last-of-type {
-    border-bottom: 2px solid white;
-}
+
+/* .content-table tbody tr:last-of-type {
+    border-bottom: 62px solid white; 
+    border-radius: 0 0 0 0;                       ARRANJAR ISTO
+} */
 
 button {
     text-align: center;
