@@ -127,7 +127,7 @@ img {
     margin: 25px 0;
     font-size: 1em;
     min-width: 400px;
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 10px 10px;
     overflow: hidden;
 }
 
@@ -150,7 +150,7 @@ img {
 }
 
 .content-table tbody tr:last-of-type {
-    border-bottom: 2px solid white;
+    border-bottom: 62px solid white;
 }
 
 button {
