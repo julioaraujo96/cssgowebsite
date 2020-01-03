@@ -206,12 +206,16 @@ label {
   }
   .flags {
     display: flex;
-    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
   }
   .mundial,
   .portugal {
     box-shadow: none;
-    width: 60%;
+    width: 50%;
+    margin: 0 auto;
   }
 
   .top {
