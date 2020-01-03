@@ -92,21 +92,19 @@ label {
 /*----------------------Download/Twitch----------------------------------*/
 
 .showcase-mid {
-  display: block;
-  padding-top: 200px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  min-height: 24em;
+  justify-content: center;
 }
 
 .buy,
 .twitch {
-  display: inline-block;
   padding: 0.6em 4em;
   text-decoration: none;
   border: 0.1em solid #fff;
   margin: 0 0.3em 0.3em 0;
   border-radius: 0.12em;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
   font-weight: 300;
   color: #ffffff;
   text-align: center;
@@ -139,13 +137,13 @@ span {
   transform: translateY(0px); /* reset */
 }
 .showcase-bot {
-  padding-top: 15%;
   text-align: center;
   color: #607175;
   font-weight: lighter;
 }
 .fa-chevron-down {
   padding-top: 1%;
+  padding-bottom: 4em;
   animation: slide1 1s ease-in-out infinite;
 }
 
@@ -375,14 +373,18 @@ iframe {
     background-color: var(--main-bg-color);
     padding-top: 50px;
   }
-
   .showcase-mid {
-    padding-top: 400px;
+    min-height: 30em;
   }
   .showcase-bot {
-    padding-top: 15%;
     font-size: 7px;
   }
+  .buy,
+  .twitch {
+    padding: 0.3em 1em;
+    margin: 0 0.1em 0.1em 0;
+  }
+
   /*---------------------------------Info section--------------------------------------*/
   #info aside {
     -ms-flex-item-align: center;
