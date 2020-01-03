@@ -100,8 +100,7 @@ label {
 }
 
 .flags {
-  display: grid;
-  grid-template-columns: 25% 25%;
+  display: flex;
   justify-content: space-around;
   margin: 0 10%;
   padding-top: 2.5%;
@@ -207,18 +206,22 @@ label {
   }
   .flags {
     display: flex;
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
+  }
+  .mundial,
+  .portugal {
+    box-shadow: none;
   }
 
   .top {
-    padding: 20%;
+    margin-top: 35%;
   }
   .top h2 {
     text-transform: uppercase;
     text-shadow: 4px 4px 5px Black;
     color: white;
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
   }
 }
