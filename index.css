@@ -84,7 +84,7 @@ nav {
 label {
   margin: 0 40px 0 0;
   font-size: 26px;
-  color: white;
+  color: var(--main-bg-color);
   line-height: 70px;
   display: none;
   width: 26px;
@@ -390,7 +390,6 @@ iframe {
     z-index: 50;
     width: 100%;
     top: 0;
-    background-color: var(--main-bg-color);
   }
   .social i {
     margin-left: 20px;
@@ -408,12 +407,11 @@ iframe {
   }
   .menu a {
     display: block;
-    border-bottom: 1px solid #eaeaeb;
+    border-bottom: 1px solid var(--main-bg-color);
     margin: 0;
   }
   #toggle:checked + .menu {
     display: block;
-    background-color: var(--main-bg-color);
     padding-top: 50px;
   }
   .showcase-mid {
