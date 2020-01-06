@@ -167,11 +167,13 @@ button {
     text-align: center;
     margin: 0;
     background: none;
-    color: white;
+    color: black;
+    font-weight: bold;
     width: 70px;
     height: 40px;
     border: 1px solid black;
-    font-size: 10px;
+    background-color: #b2b8b9;
+    font-size: 11px;
     border-radius: 4px;
     transition: 0.6s;
     overflow: hidden;
@@ -210,7 +212,7 @@ button:after {
 }
 
 button:hover {
-    background: red;
+    background: green;
     cursor: pointer;
 }
 
@@ -289,7 +291,7 @@ button:hover {
         border: 1px solid black;
     }
     button:hover {
-        background: red;
+        background: green;
         font-weight: bold;
         cursor: pointer;
     }
