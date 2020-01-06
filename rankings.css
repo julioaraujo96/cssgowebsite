@@ -1,235 +1,232 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 :root {
-    --main-bg-color: #2d3436;
-    --mobile-menu: #2c3e50;
-    --mouse-scroll: #fff;
-    --twitch: purple;
-    --menu-hover: orange;
-    --info-section: #1e3799;
-    --contact-section: black;
+  --main-bg-color: #2d3436;
+  --mouse-scroll: #fff;
+  --twitch: purple;
+  --menu-hover: white;
+  --info-section: #b2b8b9;
+  --contact-section: #2d3436;
+  --navbar: #b2b8b9;
 }
-
 
 /*--------------------------------------------------------*/
 
 * {
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *:before,
 *:after {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Montserrat, Verdana, sans-serif;
-    background-color: var(--main-bg-color);
-    line-height: 1.6;
+  font-family: Montserrat, Verdana, sans-serif;
+  background-color: var(--main-bg-color);
+  line-height: 1.6;
 }
-
 
 /*----------------------Social Links----------------------------------*/
 
 .social i {
-    margin-left: 20px;
-    margin-top: 10px;
-    float: left;
-    font-size: 30px;
-    color: #8395a7;
+  margin-left: 20px;
+  margin-top: 15px;
+  float: left;
+  font-size: 30px;
+  color: var(--main-bg-color);
 }
 
 .social i:hover {
-    opacity: 0.5;
+  opacity: 0.5;
 }
-
 
 /*------------------------First Main Section--------------------------------*/
 
 header {
-    width: 100%;
-    background-color: var(--main-bg-color);
+  width: 100%;
+  background-color: var(--main-bg-color);
 }
-
 
 /*--------------------------Navigation------------------------------*/
 
 nav {
-    text-align: right;
-    height: 70px;
-    line-height: 70px;
+  text-align: right;
+  height: 70px;
+  line-height: 70px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+  background-color: var(--navbar);
 }
 
 .menu {
-    margin: 0 30px 0 0;
-    text-transform: uppercase;
+  margin: 0 30px 0 0;
+  text-transform: uppercase;
 }
 
 .menu a {
-    clear: right;
-    text-decoration: none;
-    color: #fff;
-    margin: 0 10px;
-    line-height: 70px;
+  clear: right;
+  text-decoration: none;
+  color: var(--main-bg-color);
+  margin: 0 10px;
+  line-height: 70px;
 }
 
 .menu a:hover {
-    color: var(--menu-hover);
+  color: var(--menu-hover);
 }
 
 label {
-    margin: 0 40px 0 0;
-    font-size: 26px;
-    line-height: 70px;
-    color: white;
-    display: none;
-    width: 26px;
-    float: right;
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  color: white;
+  display: none;
+  width: 26px;
+  float: right;
 }
 
 #toggle {
-    display: none;
+  display: none;
 }
 
 .top h2 {
-    padding-top: 1em;
-    text-transform: uppercase;
-    text-shadow: 4px 4px 5px Black;
-    color: white;
-    font-size: 26px;
-    text-align: center;
+  padding-top: 1em;
+  text-transform: uppercase;
+  text-shadow: 4px 4px 5px Black;
+  color: white;
+  font-size: 26px;
+  text-align: center;
 }
 
 .flags {
-    display: flex;
-    justify-content: space-around;
-    margin: 0 10%;
-    padding-top: 2.5%;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 10%;
+  padding-top: 2.5%;
 }
 
 .mundial,
 .portugal {
-    border: 1px solid;
-    border-radius: 5%;
-    box-shadow: 5px 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid;
+  border-radius: 5%;
+  box-shadow: 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .mundial:hover,
 .portugal:hover {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 .players-pt {
-    margin-top: 5%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .player-card {
-    background-color: var(--info-section);
-    border: 1px solid;
-    text-align: center;
-    position: relative;
+  background-color: var(--info-section);
+  border: 1px solid;
+  text-align: center;
+  position: relative;
 }
 
 .player-card img {
-    width: 60%;
+  width: 60%;
 }
 
 .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: 0.5s ease;
-    background-color: #718093;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #718093;
 }
 
 .player-details {
-    padding-top: 3em;
-    list-style: none;
-    color: white;
-    line-height: 2em;
+  padding-top: 3em;
+  list-style: none;
+  color: white;
+  line-height: 2em;
 }
 
 .player-card:hover .overlay {
-    opacity: 1;
+  opacity: 1;
 }
 
 .players-mundiais {
-    margin-top: 5%;
-    display: none;
-    justify-content: center;
-    flex-wrap: wrap;
+  margin-top: 5%;
+  display: none;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-
 
 /*-----------------------------Mobile------------------------------------------*/
 
 @media only screen and (max-width: 500px) {
-    nav {
-        display: block;
-        height: auto;
-        position: fixed;
-        height: auto;
-        z-index: 50;
-        width: 100%;
-        top: 0;
-        background-color: var(--main-bg-color);
-    }
-    .social i {
-        margin-left: 20px;
-        margin-top: 20px;
-        font-size: 30px;
-    }
-    label {
-        display: block;
-        cursor: pointer;
-    }
-    .menu {
-        text-align: center;
-        width: 100%;
-        display: none;
-    }
-    .menu a {
-        display: block;
-        border-bottom: 1px solid #eaeaeb;
-        margin: 0;
-    }
-    #toggle:checked+.menu {
-        display: block;
-        background-color: var(--main-bg-color);
-        padding-top: 50px;
-    }
-    .flags {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        text-align: center;
-    }
-    .mundial,
-    .portugal {
-        box-shadow: none;
-        width: 50%;
-        margin: 0 auto;
-    }
-    .top {
-        margin-top: 20%;
-    }
-    .top h2 {
-        text-transform: uppercase;
-        text-shadow: 4px 4px 5px Black;
-        color: white;
-        font-size: 20px;
-        text-align: center;
-    }
+  nav {
+    display: block;
+    height: auto;
+    position: fixed;
+    height: auto;
+    z-index: 50;
+    width: 100%;
+    top: 0;
+    background-color: var(--main-bg-color);
+  }
+  .social i {
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 30px;
+  }
+  label {
+    display: block;
+    cursor: pointer;
+  }
+  .menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+  .menu a {
+    display: block;
+    border-bottom: 1px solid #eaeaeb;
+    margin: 0;
+  }
+  #toggle:checked + .menu {
+    display: block;
+    background-color: var(--main-bg-color);
+    padding-top: 50px;
+  }
+  .flags {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+  }
+  .mundial,
+  .portugal {
+    box-shadow: none;
+    width: 50%;
+    margin: 0 auto;
+  }
+  .top {
+    margin-top: 20%;
+  }
+  .top h2 {
+    text-transform: uppercase;
+    text-shadow: 4px 4px 5px Black;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+  }
 }

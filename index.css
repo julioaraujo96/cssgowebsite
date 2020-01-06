@@ -3,9 +3,11 @@
   --main-bg-color: #2d3436;
   --mouse-scroll: #fff;
   --twitch: purple;
-  --menu-hover: orange;
-  --info-section: #1e3799;
-  --contact-section: black;
+  --menu-hover: white;
+  --info-section: #b2b8b9;
+  --contact-section: #2d3436;
+  --navbar: #b2b8b9;
+  --footer: #b2b8b9;
 }
 
 /*--------------------------------------------------------*/
@@ -34,10 +36,10 @@ body {
 
 .social i {
   margin-left: 20px;
-  margin-top: 5px;
+  margin-top: 15px;
   float: left;
   font-size: 30px;
-  color: #8395a7;
+  color: var(--main-bg-color);
 }
 
 .social i:hover {
@@ -48,6 +50,7 @@ body {
 
 .showcase {
   width: 100%;
+  /* background-color: #b2b8b9; */
   background-color: var(--main-bg-color);
 }
 
@@ -57,6 +60,8 @@ nav {
   text-align: right;
   height: 70px;
   line-height: 70px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+  background-color: var(--navbar);
 }
 
 .menu {
@@ -67,7 +72,7 @@ nav {
 .menu a {
   clear: right;
   text-decoration: none;
-  color: #fff;
+  color: var(--main-bg-color);
   margin: 0 10px;
   line-height: 70px;
 }
@@ -168,8 +173,8 @@ span {
 footer {
   display: flex;
   letter-spacing: 0.5em;
-  background-color: var(--main-bg-color);
-  color: #607175;
+  background-color: var(--navbar);
+  color: var(--main-bg-color);
   justify-content: center;
   align-items: center;
 }
@@ -199,7 +204,7 @@ footer p {
 #info {
   width: 100%;
   background-color: var(--info-section);
-  color: #fff;
+  color: #2d3436;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
