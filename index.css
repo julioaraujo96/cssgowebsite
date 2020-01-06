@@ -48,7 +48,7 @@ body {
 
 .showcase {
   width: 100%;
-  background: url('/header.png');
+  background: url('./img/header.png');
   background-size: cover;
   background-attachment: fixed;
   overflow: hidden;
