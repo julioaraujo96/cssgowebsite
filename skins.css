@@ -244,7 +244,6 @@ button:hover {
   .top h2 {
     padding-top: 4em;
     text-transform: uppercase;
-    text-shadow: 4px 4px 5px Black;
     color: white;
     font-size: 22px;
     text-align: center;
@@ -254,8 +253,6 @@ button:hover {
     width: 75px;
   }
   .content-table thead tr {
-    background-color: black;
-    color: black;
     text-align: center;
     font-size: 13px;
   }
@@ -264,13 +261,8 @@ button:hover {
     display: block;
     width: 100%;
     padding: 7px 7px;
-    color: white;
   }
   .content-table tbody tr {
-    border-bottom: 5px solid black;
     text-align: center;
-  }
-  .content-table tbody tr:last-of-type {
-    border-bottom: 3px solid black;
   }
 }
