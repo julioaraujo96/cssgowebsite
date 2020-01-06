@@ -154,55 +154,44 @@ img {
     border-bottom: 62px solid black;
 }
 
-button {
-    text-align: center;
-    margin: 0;
-    background: none;
-    color: white;
-    width: 70px;
-    height: 40px;
-    border: 1px solid black;
-    font-size: 10px;
-    border-radius: 4px;
-    transition: 0.6s;
-    overflow: hidden;
-}
-
-button:focus {
-    outline: none;
-}
-
 button:before {
     content: '';
     display: block;
     position: absolute;
-    background: rgb(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, .5);
     width: 60px;
     height: 100%;
     left: 0;
     top: 0;
-    opacity: 0.5;
+    opacity: .5;
     filter: blur(30px);
-    transform: translateX(-1300px) skewx(-15deg);
+    transform: translateX(-130px) skewX(-15deg);
 }
 
 button:after {
     content: '';
     display: block;
     position: absolute;
-    background: rgb(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, .2);
     width: 30px;
     height: 100%;
     left: 30px;
     top: 0;
     opacity: 0;
     filter: blur(30px);
-    transform: translate(-100px) scaleX(-15deg);
+    transform: translateX(-100px) scaleX(-15deg);
 }
 
-button:hover {
-    background: red;
-    cursor: pointer;
+button:hover:before {
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .6;
+    transition: .7s;
+}
+
+button:hover:after {
+    transform: translateX(300px) skewX(-15deg);
+    opacity: 1;
+    transition: .7s;
 }
 
 
@@ -248,19 +237,22 @@ button:hover {
         text-transform: uppercase;
         text-shadow: 4px 4px 5px Black;
         color: white;
-        font-size: 22px;
+        font-size: 25px;
         text-align: center;
     }
     img {
         height: 75px;
         width: 75px;
     }
+    .content-table {
+        margin: 2px 2px;
+        font-size: 1em;
+    }
     .content-table thead tr {
-        width: 700px;
         background-color: black;
         color: black;
         text-align: center;
-        font-size: 13px;
+        font-size: 17px;
     }
     .content-table th,
     .content-table td {
