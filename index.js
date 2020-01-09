@@ -45,3 +45,49 @@ const complete = () => {
   clearInterval(timer); //clear
   timer = null; // timer to null so it doesn't tick
 };
+
+let emailBody = document.getElementById('emailBody');
+let userEmail = document.getElementById('userEmail');
+
+toastr.options = {
+  closeButton: true,
+  debug: false,
+  newestOnTop: false,
+  progressBar: false,
+  positionClass: 'toast-top-full-width',
+  preventDuplicates: false,
+  onclick: null,
+  showDuration: '300',
+  hideDuration: '1000',
+  timeOut: '5000',
+  extendedTimeOut: '1000',
+  showEasing: 'swing',
+  hideEasing: 'linear',
+  showMethod: 'fadeIn',
+  hideMethod: 'fadeOut'
+};
+
+const sendEmail = () => {
+  if (userEmail.value && emailBody.value) {
+    Email.send({
+      Host: 'smtp.gmail.com',
+      Username: 'csgoinfodev@gmail.com',
+      Password: 'ipmaia321',
+      To: userEmail.value,
+      From: 'csgoinfodev@gmail.com',
+      Subject: 'CS:GO Info',
+      Body: `Bem-vindo ao CS:GO info, ${userEmail.value}. Recebemos a sua mensagem: ${emailBody.value}.`
+    }).then(message => {
+      toastr['success']('E-mail enviado com sucesso');
+    });
+  } else {
+    toastr['error']('Preencha todos os campos!');
+  }
+
+  clearForm();
+};
+
+const clearForm = () => {
+  userEmail.value = '';
+  emailBody.value = '';
+};

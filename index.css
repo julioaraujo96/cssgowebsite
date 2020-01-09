@@ -336,7 +336,7 @@ iframe {
   color: white;
 }
 
-.box input[type='submit'] {
+.box #sendBtn {
   border: 0;
   background: #2ecc71;
   display: block;
@@ -352,7 +352,7 @@ iframe {
   cursor: pointer;
 }
 
-.box input[type='submit']:hover {
+.box #sendBtn:hover {
   opacity: 0.5;
 }
 
