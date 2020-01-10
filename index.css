@@ -337,18 +337,17 @@ iframe {
 }
 
 .box #sendBtn {
-  border: 0;
-  background: #2ecc71;
-  display: block;
-  margin: 20px auto;
-  text-align: center;
-  border: 2px solid #2ecc71;
-  padding: 14px 40px;
+  background: #4ddd4d;
+  color: #fff;
+  border-radius: 0.5em;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: none;
+  border-bottom: 5px solid #2fbb2f;
   outline: none;
-  color: white;
-  border-radius: 24px;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
+  margin: 0 auto 1.5em;
   cursor: pointer;
 }
 
