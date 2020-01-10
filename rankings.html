@@ -1,292 +1,314 @@
 <!DOCTYPE html>
 <html lang="pt">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script src="https://kit.fontawesome.com/00d35664a3.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/00d35664a3.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="icon" type="image/png" href="/favicon-16x16.ico" sizes="16x16" />
     <link rel="icon" type="image/png" href="/favicon-32x32.ico" sizes="32x32" />
     <link rel="stylesheet" href="rankings.css" />
     <title>CS:GO INFO</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <div class="social">
-                <a href="https://github.com/julioaraujo96/cssgowebsite" target="_blank"><i class="fab fa-github-square"></i></a>
-                <a href="https://www.facebook.com/CounterStrike/" target="_blank"><i class="fab fa-facebook-square"></i></a>
-                <a href="https://www.instagram.com/csgo_dev/?hl=pt" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://twitter.com/csgo" target="_blank"><i class="fab fa-twitter-square"></i></a>
-                <a href="index.html#contact"><i class="fas fa-envelope-square"></i></a>
-            </div>
-            <label for="toggle">&#9776;</label>
-            <input type="checkbox" id="toggle" />
-            <div class="menu">
-                <a href="index.html">Home</a>
-                <a href="#">Rankings</a>
-                <a href="skins.html">Skins</a>
-                <a href="stats.html">Stats</a>
-            </div>
-        </nav>
+      <nav>
+        <div class="social">
+          <a
+            href="https://github.com/julioaraujo96/cssgowebsite"
+            target="_blank"
+            ><i class="fab fa-github-square"></i
+          ></a>
+          <a href="https://www.facebook.com/CounterStrike/" target="_blank"
+            ><i class="fab fa-facebook-square"></i
+          ></a>
+          <a href="https://www.instagram.com/csgo_dev/?hl=pt" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://twitter.com/csgo" target="_blank"
+            ><i class="fab fa-twitter-square"></i
+          ></a>
+          <a href="index.html#contact"
+            ><i class="fas fa-envelope-square"></i
+          ></a>
+        </div>
+        <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle" />
+        <div class="menu">
+          <a href="index.html">Home</a>
+          <a href="#">Rankings</a>
+          <a href="skins.html">Skins</a>
+          <a href="stats.html">Stats</a>
+        </div>
+      </nav>
     </header>
     <main class="wrapper">
-        <div class="top">
-            <h2>CS:GO top 10 jogadores <span id="rank">nacionais</span> </h2>
+      <div class="top">
+        <h2>CS:GO top 10 jogadores <span id="rank">nacionais</span></h2>
+      </div>
+      <div class="flags">
+        <input
+          type="image"
+          class="portugal"
+          src="./img/Portugal.jpg"
+          alt="portugal"
+        />
+        <input
+          type="image"
+          class="mundial"
+          src="./img/Mundial.png"
+          alt="mundial"
+        />
+      </div>
+      <div class="players-pt">
+        <div class="player-card">
+          <img src="./img/players/fox.png" alt="fox" />
+          <div class="overlay">
+            <ul class="player-details">
+              <li>Ricardo "Fox" Pacheco</li>
+              <li>15 de novembro de 1986</li>
+              <li>Giants</li>
+              <li>$89,999 / ano</li>
+              <li>AWPer, Ingame Leader</li>
+            </ul>
+          </div>
         </div>
-        <div class="flags">
-            <input type="image" class="portugal" src="./img/Portugal.jpg">
-            <input type="image" class="mundial" src="./img/Mundial.png">
+        <div class="player-card">
+          <img src="./img/players/mutiris.png" alt="mutiris" />
+          <div class="overlay">
+            <ul class="player-details">
+              <li>Christopher "Mutiris" Fernandes</li>
+              <li>26 de dezembro de 1992</li>
+              <li>sAw</li>
+              <li>$20,984 / ano</li>
+              <li>Entry Fragger, Ingame Leader</li>
+            </ul>
+          </div>
         </div>
-        <div class="players-pt">
-            <div class="player-card">
-                <img src="./img/players/fox.png" alt="fox">
-                <div class="overlay">
-                    <ul class="player-details">
-                        <li>Ricardo "Fox" Pacheco</li>
-                        <li>15 de novembro de 1986</li>
-                        <li>Giants</li>
-                        <li>$89,999 / ano</li>
-                        <li>AWPer, Ingame Leader</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="player-card">
-                <img src="./img/players/mutiris.png" alt="mutiris">
-                <div class="overlay">
-                    <ul class="player-details">
-                        <li>Christopher "Mutiris" Fernandes</li>
-                        <li>26 de dezembro de 1992</li>
-                        <li>sAw</li>
-                        <li>$20,984 / ano</li>
-                        <li>Entry Fragger, Ingame Leader</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="player-card">
-                <img src="./img/players/rmn.png" alt="rmn">
-                <div class="overlay">
-                    <ul class="player-details">
-                        <li>Ricardo "rmn" Oliveira</li>
-                        <li>14 de maio de 1992</li>
-                        <li>sAw</li>
-                        <li>$20,028 / ano</li>
-                        <li>Entry Fragger</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="player-card">
-                <img src="./img/players/just.png" alt="just">
-                <div class="overlay">
-                    <ul class="player-details">
-                        <li>Tiago "Just" Moura</li>
-                        <li>29 de abril de 1996 </li>
-                        <li>sAw</li>
-                        <li>$19,564 / ano</li>
-                        <li>Support</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="player-card">
-                <img src="./img/players/obj.png" alt="obj">
-                <div class="overlay">
-                    <ul class="player-details">
-                        <li>Francisco "obj" Ramos</li>
-                        <li>5 de setembro de 1995</li>
-                        <li>OFFSET</li>
-                        <li>$18,221 / ano</li>
-                        <li>AWPer</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="player-card">
-                <img src="./img/players/stadodo.png" alt="stadodo">
-                <div class="overlay">
-                    <ul class="player-details">
-                        <li>Renato "stadodo" Gonçalves</li>
-                        <li>17 de novembro de 1996</li>
-                        <li>sAw</li>
-                        <li>$15,658 / ano</li>
-                        <li>AWPer, Ingame Leader</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="player-card">
-                <img src="./img/players/pr.png" alt="pr">
-                <div class="overlay">
-                    <ul class="player-details">
-                        <li>Paulo "Pr" Silva</li>
-                        <li>2 de outubro de 1998</li>
-                        <li>Sem equipa</li>
-                        <li>$14,515 / ano</li>
-                        <li>Support</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="player-card">
-                <img src="./img/players/killdream.png" alt="killdream">
-                <div class="overlay">
-                    <ul class="player-details">
-                        <li>João "KILLDREAM"Ferreira</li>
-                        <li>10 de janeiro de 1993</li>
-                        <li>Keyd Stars</li>
-                        <li>$50.999 / ano</li>
-                        <li>Lurcker</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="player-card">
-                <img src="./img/players/rizz.png" alt="rizz">
-                <div class="overlay">
-                    <ul class="player-details">
-                        <li>Rui "Rizz" Lima</li>
-                        <li>15 de dezembro de 1992</li>
-                        <li>OFFSET</li>
-                        <li>$11,821 / ano</li>
-                        <li>Rifler</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="player-card">
-                <img src="./img/players/cunha.png" alt="cunha">
-                <div class="overlay">
-                    <ul class="player-details">
-                        <li>Cláudio "Cunha" Cunha</li>
-                        <li>7 de setembro de 1996</li>
-                        <li>Sem equipa</li>
-                        <li>$8,147 / ano</li>
-                        <li>Rifler</li>
-                    </ul>
-                </div>
-            </div>
+        <div class="player-card">
+          <img src="./img/players/rmn.png" alt="rmn" />
+          <div class="overlay">
+            <ul class="player-details">
+              <li>Ricardo "rmn" Oliveira</li>
+              <li>14 de maio de 1992</li>
+              <li>sAw</li>
+              <li>$20,028 / ano</li>
+              <li>Entry Fragger</li>
+            </ul>
+          </div>
         </div>
+        <div class="player-card">
+          <img src="./img/players/just.png" alt="just" />
+          <div class="overlay">
+            <ul class="player-details">
+              <li>Tiago "Just" Moura</li>
+              <li>29 de abril de 1996</li>
+              <li>sAw</li>
+              <li>$19,564 / ano</li>
+              <li>Support</li>
+            </ul>
+          </div>
         </div>
-        <div class="players-mundiais">
-            <div class="player-card">
-                <img src="./img/players/s1mple.png" alt="s1mple">
-                <div class="overlay">
-                    <ul class="player-details">
-                        <li>Oleksandr "S1mple" Kostyliev</li>
-                        <li>2 de outubro de 1997</li>
-                        <li>Natus Vincere</li>
-                        <li>$566,486 / ano</li>
-                        <li>Entry Fragger, AWPer</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="player-card">
-                <img src="./img/players/device.png" alt="device">
-                <div class="overlay">
-                    <ul class="player-details">
-                        <li>Nicolai "Dev1ce" Reedtz</li>
-                        <li>8 de setembro de 1995</li>
-                        <li>Astralis</li>
-                        <li>$1,713,501 / ano</li>
-                        <li>AWPer</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="player-card">
-                <img src="./img/players/niko.png" alt="NiKo">
-                <div class="overlay">
-                    <ul class="player-details">
-                        <li>Nikola "NiKo" Kovač</li>
-                        <li>16 de fevereiro de 1997</li>
-                        <li>FaZe Clan</li>
-                        <li>$695,696 / ano</li>
-                        <li>Entry Fragger, Ingame Leader</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="player-card">
-                <img src="./img/players/coldzera.png" alt="coldzera">
-                <div class="overlay">
-                    <ul class="player-details">
-                        <li>Marcelo "coldzera" David</li>
-                        <li>31 de outubro de 1994</li>
-                        <li>FaZe Clan</li>
-                        <li>$952,699 / ano</li>
-                        <li>Rifler, Ingame Leader</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="player-card">
-                <img src="./img/players/oskar.png" alt="oskar">
-                <div class="overlay">
-                    <ul class="player-details">
-                        <li>Tomáš "oskar" Šťastný</li>
-                        <li>27 de junho de 1991</li>
-                        <li>Sem equipa</li>
-                        <li>$328,829 / ano</li>
-                        <li>AWPer</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="player-card">
-                <img src="./img/players/twistzz.png" alt="twistzz">
-                <div class="overlay">
-                    <ul class="player-details">
-                        <li>Russel "Twistzz" Dulken</li>
-                        <li>14 de novembro de 1999</li>
-                        <li>Liquid</li>
-                        <li>$779,022 / ano</li>
-                        <li>Rifler</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="player-card">
-                <img src="./img/players/kennys.png" alt="kennys">
-                <div class="overlay">
-                    <ul class="player-details">
-                        <li>Kenny "KennyS" Schrub</li>
-                        <li>19 de maio de 1995</li>
-                        <li>G2 Esports</li>
-                        <li>$642,570 / ano</li>
-                        <li>AWPer</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="player-card">
-                <img src="./img/players/magisk.png" alt="magisk">
-                <div class="overlay">
-                    <ul class="player-details">
-                        <li>Emil "Magisk" Reif</li>
-                        <li>5 de março de 1998</li>
-                        <li>Astralis</li>
-                        <li>$1,326,818 / ano</li>
-                        <li>Lurcker</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="player-card">
-                <img src="./img/players/ropz.png" alt="ropz">
-                <div class="overlay">
-                    <ul class="player-details">
-                        <li>Robin "ropz"Kool</li>
-                        <li>22 de dezembro de 1999</li>
-                        <li>mousesports</li>
-                        <li>$445,131 / ano</li>
-                        <li>Lurcker</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="player-card">
-                <img src="./img/players/guardian.png" alt="guardian">
-                <div class="overlay">
-                    <ul class="player-details">
-                        <li>Ladislav "GuardiaN" Kovács</li>
-                        <li>9 de julho de 1991</li>
-                        <li>Natus Vincere</li>
-                        <li>$799,607 / ano</li>
-                        <li>AWPer</li>
-                    </ul>
-                </div>
-            </div>
+        <div class="player-card">
+          <img src="./img/players/obj.png" alt="obj" />
+          <div class="overlay">
+            <ul class="player-details">
+              <li>Francisco "obj" Ramos</li>
+              <li>5 de setembro de 1995</li>
+              <li>OFFSET</li>
+              <li>$18,221 / ano</li>
+              <li>AWPer</li>
+            </ul>
+          </div>
         </div>
+        <div class="player-card">
+          <img src="./img/players/stadodo.png" alt="stadodo" />
+          <div class="overlay">
+            <ul class="player-details">
+              <li>Renato "stadodo" Gonçalves</li>
+              <li>17 de novembro de 1996</li>
+              <li>sAw</li>
+              <li>$15,658 / ano</li>
+              <li>AWPer, Ingame Leader</li>
+            </ul>
+          </div>
+        </div>
+        <div class="player-card">
+          <img src="./img/players/pr.png" alt="pr" />
+          <div class="overlay">
+            <ul class="player-details">
+              <li>Paulo "Pr" Silva</li>
+              <li>2 de outubro de 1998</li>
+              <li>Sem equipa</li>
+              <li>$14,515 / ano</li>
+              <li>Support</li>
+            </ul>
+          </div>
+        </div>
+        <div class="player-card">
+          <img src="./img/players/killdream.png" alt="killdream" />
+          <div class="overlay">
+            <ul class="player-details">
+              <li>João "KILLDREAM"Ferreira</li>
+              <li>10 de janeiro de 1993</li>
+              <li>Keyd Stars</li>
+              <li>$50.999 / ano</li>
+              <li>Lurcker</li>
+            </ul>
+          </div>
+        </div>
+        <div class="player-card">
+          <img src="./img/players/rizz.png" alt="rizz" />
+          <div class="overlay">
+            <ul class="player-details">
+              <li>Rui "Rizz" Lima</li>
+              <li>15 de dezembro de 1992</li>
+              <li>OFFSET</li>
+              <li>$11,821 / ano</li>
+              <li>Rifler</li>
+            </ul>
+          </div>
+        </div>
+        <div class="player-card">
+          <img src="./img/players/cunha.png" alt="cunha" />
+          <div class="overlay">
+            <ul class="player-details">
+              <li>Cláudio "Cunha" Cunha</li>
+              <li>7 de setembro de 1996</li>
+              <li>Sem equipa</li>
+              <li>$8,147 / ano</li>
+              <li>Rifler</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="players-mundiais">
+        <div class="player-card">
+          <img src="./img/players/s1mple.png" alt="s1mple" />
+          <div class="overlay">
+            <ul class="player-details">
+              <li>Oleksandr "S1mple" Kostyliev</li>
+              <li>2 de outubro de 1997</li>
+              <li>Natus Vincere</li>
+              <li>$566,486 / ano</li>
+              <li>Entry Fragger, AWPer</li>
+            </ul>
+          </div>
+        </div>
+        <div class="player-card">
+          <img src="./img/players/device.png" alt="device" />
+          <div class="overlay">
+            <ul class="player-details">
+              <li>Nicolai "Dev1ce" Reedtz</li>
+              <li>8 de setembro de 1995</li>
+              <li>Astralis</li>
+              <li>$1,713,501 / ano</li>
+              <li>AWPer</li>
+            </ul>
+          </div>
+        </div>
+        <div class="player-card">
+          <img src="./img/players/niko.png" alt="NiKo" />
+          <div class="overlay">
+            <ul class="player-details">
+              <li>Nikola "NiKo" Kovač</li>
+              <li>16 de fevereiro de 1997</li>
+              <li>FaZe Clan</li>
+              <li>$695,696 / ano</li>
+              <li>Entry Fragger, Ingame Leader</li>
+            </ul>
+          </div>
+        </div>
+        <div class="player-card">
+          <img src="./img/players/coldzera.png" alt="coldzera" />
+          <div class="overlay">
+            <ul class="player-details">
+              <li>Marcelo "coldzera" David</li>
+              <li>31 de outubro de 1994</li>
+              <li>FaZe Clan</li>
+              <li>$952,699 / ano</li>
+              <li>Rifler, Ingame Leader</li>
+            </ul>
+          </div>
+        </div>
+        <div class="player-card">
+          <img src="./img/players/oskar.png" alt="oskar" />
+          <div class="overlay">
+            <ul class="player-details">
+              <li>Tomáš "oskar" Šťastný</li>
+              <li>27 de junho de 1991</li>
+              <li>Sem equipa</li>
+              <li>$328,829 / ano</li>
+              <li>AWPer</li>
+            </ul>
+          </div>
+        </div>
+        <div class="player-card">
+          <img src="./img/players/twistzz.png" alt="twistzz" />
+          <div class="overlay">
+            <ul class="player-details">
+              <li>Russel "Twistzz" Dulken</li>
+              <li>14 de novembro de 1999</li>
+              <li>Liquid</li>
+              <li>$779,022 / ano</li>
+              <li>Rifler</li>
+            </ul>
+          </div>
+        </div>
+        <div class="player-card">
+          <img src="./img/players/kennys.png" alt="kennys" />
+          <div class="overlay">
+            <ul class="player-details">
+              <li>Kenny "KennyS" Schrub</li>
+              <li>19 de maio de 1995</li>
+              <li>G2 Esports</li>
+              <li>$642,570 / ano</li>
+              <li>AWPer</li>
+            </ul>
+          </div>
+        </div>
+        <div class="player-card">
+          <img src="./img/players/magisk.png" alt="magisk" />
+          <div class="overlay">
+            <ul class="player-details">
+              <li>Emil "Magisk" Reif</li>
+              <li>5 de março de 1998</li>
+              <li>Astralis</li>
+              <li>$1,326,818 / ano</li>
+              <li>Lurcker</li>
+            </ul>
+          </div>
+        </div>
+        <div class="player-card">
+          <img src="./img/players/ropz.png" alt="ropz" />
+          <div class="overlay">
+            <ul class="player-details">
+              <li>Robin "ropz"Kool</li>
+              <li>22 de dezembro de 1999</li>
+              <li>mousesports</li>
+              <li>$445,131 / ano</li>
+              <li>Lurcker</li>
+            </ul>
+          </div>
+        </div>
+        <div class="player-card">
+          <img src="./img/players/guardian.png" alt="guardian" />
+          <div class="overlay">
+            <ul class="player-details">
+              <li>Ladislav "GuardiaN" Kovács</li>
+              <li>9 de julho de 1991</li>
+              <li>Natus Vincere</li>
+              <li>$799,607 / ano</li>
+              <li>AWPer</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </main>
     <script src="rankings.js"></script>
-</body>
-
+  </body>
 </html>
