@@ -1,2 +1,2 @@
 # cssgowebsite
-projeto Tecnologias de Internet
+https://julioaraujo96.github.io/cssgowebsite/
